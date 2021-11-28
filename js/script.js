@@ -86,12 +86,12 @@ if (year % 400===0 || year % 4 === 0  && year % 100 > 0 ){
 }
 
 function getСonverter() {
-    let currency , valuta;
-    valuta = +prompt('Input sum in USD');
-    console.log(valuta);
-    currency = prompt ('Сonvert to EUR input 1 ,UAN-2,AZN-3');
+    let currency,valuta ;
+    currency = +prompt('Input sum in USD');
+    // console.log(valuta);
+    valuta = +prompt ('Сonvert to EUR input 1 ,UAN-2,AZN-3');
   console.log (currency);
- switch (currency) {
+ switch (valuta) {
      case 1 :
         alert (currency*0.88);  
 break;
