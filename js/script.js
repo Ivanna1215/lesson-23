@@ -129,57 +129,54 @@ function checkEnglish (){
   let question;
   question=('Complete the sentence with the correct verb forms to be');
   alert (question);
-  let question1 = +prompt ('..... I on time? 1-am,2-is, 3-are');
- let result1;
+  let questionONe = +prompt ('..... I on time? 1-am,2-is, 3-are');
 
-  switch (result1) {
+  switch (questionONe) {
     case 1 :
-      alert (question1*1); 
+      alert (questionONe*2); 
 break;
 case 2 :
-  alert (question1*0); 
+  alert (questionONe*0); 
 break;
 case 3 :
-  alert (question1*0); 
+  alert (questionONe*0); 
 break;
     default:
-      alert (question1*0); 
+      alert (questionONe*0); 
       break;
   }
-  let question2 = +prompt ('....she there? 1-am,2-is,3-are');
-  let result2;
-  switch (result2) {
+  let questionTwo = +prompt ('....she there? 1-am,2-is,3-are');
+ 
+  switch (questionTwo) {
     case 1 :
     case 3 :
-     alert (question2*0);  
+     alert (questionTwo*0);  
 break;
     case 2 :
-       alert (question2 *1);  
+       alert (questionTwo *1);  
 break;
 
     default:
-      alert (question2*0);
+      alert (questionTwo*0);
       break;
   }
-  let question3 = +prompt ('....they late? 1-am,2-is,3-are');
-  let result3;
-  switch (result3) {
+  let questionThree = +prompt ('....they late? 1-am,2-is,3-are');
+  switch (questionThree) {
 
     case 3 :
-      alert (question3*1); 
+      alert (questionThree*1); 
 break;
  case 1 :
   case 2 :
-    alert(question3*0);  
+    alert(questionThree*0);  
 break;
     default:
-      alert(question3*0);
+      alert(questionThree*0);
       break;
   }
-  let result = (result1+result2+result3);
- alert(result);
 
-
+let result = (questionOne + questionTwo + questionThree);
+alert (result);
 
   }
 
