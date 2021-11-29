@@ -134,16 +134,16 @@ function checkEnglish (){
 
   switch (result1) {
     case 1 :
-      result1=question1*1; 
+      alert (question1*1); 
 break;
 case 2 :
-  result1=question1*0; 
+  alert (question1*0); 
 break;
 case 3 :
-  result1=question1*0; 
+  alert (question1*0); 
 break;
     default:
-      result1=question1*0; 
+      alert (question1*0); 
       break;
   }
   let question2 = +prompt ('....she there? 1-am,2-is,3-are');
@@ -151,14 +151,14 @@ break;
   switch (result2) {
     case 1 :
     case 3 :
-      result2=question2 * 0;  
+     alert (question2*0);  
 break;
     case 2 :
-       result2=question2 *1;  
+       alert (question2 *1);  
 break;
 
     default:
-      result2=question2*0;
+      alert (question2*0);
       break;
   }
   let question3 = +prompt ('....they late? 1-am,2-is,3-are');
@@ -166,14 +166,14 @@ break;
   switch (result3) {
 
     case 3 :
-      result3=question3*1; 
+      alert (question3*1); 
 break;
  case 1 :
   case 2 :
-    result3=question3*0;  
+    alert(question3*0);  
 break;
     default:
-      result3=question3*0;
+      alert(question3*0);
       break;
   }
   let result = (result1+result2+result3);
