@@ -108,6 +108,69 @@ case 3 :
    
 }
 
+function getAmount() {
+    let amount;
+    amount = +prompt ('Enter the purchase amount');
+    if (amount>200 && amount<=300) {
+        alert (amount -(amount*0.03));  
+      }
+      else if (amount>300 && amount<=500) {
+        alert (amount - (amount*0.05)); 
+      }
+      else if (amount>500 && amount>=700) {
+        alert (amount - (amount*0.07)); 
+      }
+      else {
+          alert (amount - (amount*0.07));
+      }
+}
+
+function checkEnglish (){
+  let question;
+  question=('Complete the sentence with the correct verb forms to be');
+  alert (question);
+  let question1 = +prompt ('..... I on time? 1-am,2-is, 3-are');
+ let result1= question1
+
+  switch (question1) {
+    case 1 :
+      question1===2; 
+break;
+
+    default:
+      console.log (0);
+      break;
+  }
+  let question2 = +prompt ('....she there? 1-am,2-is,3-are');
+  switch (question2) {
+    case 2 :
+       question2===2;  
+break;
+
+    default:
+      console.log (0);
+      break;
+  }
+  let question3 = +prompt ('....they late? 1-am,2-is,3-are');
+  switch (question3) {
+    case 3 :
+      question3===2; 
+break;
+
+    default:
+      console.log (0);
+      break;
+  }
+  let result = (question1+question2+question3);
+ alert(result);
+
+
+
+  }
+
+
+
+
 
 
 
