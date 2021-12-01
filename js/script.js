@@ -193,6 +193,12 @@ alert (`Check N1 ${day}.${month}.${year}`);
     month+=1;
     alert(`Check N2 ${day}.${month}.${year}`);
   }
+  else if (month===2, day>=29) {
+    month+="Error";
+    day-= "Error";
+    alert (`Check N2A wrong date`);
+  }
+
   else if (month===2, day===28) {
     month+=1;
     day-=27;
