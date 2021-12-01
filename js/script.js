@@ -85,6 +85,25 @@ if (year % 400===0 || year % 4 === 0  && year % 100 > 0 ){
      };
 }
 
+function checkPalindrome() {
+  let number;
+  number = +prompt ('Input your five-digit number');
+let a = number % 10 ; 
+// alert (a);
+let b = Math.floor(number/10) % 10;
+// alert (b);
+let c = Math.floor(number/100) % 10;
+// alert (c);
+let d = Math.floor(number/1000) % 10;
+// alert (d);
+let e = Math.floor(number/10000);
+// alert (e);
+if (a===e && b===d) {
+  alert ('This number is palindrome');
+} else {
+  alert ('This number is not a palindrome ');
+}
+}
 function getСonverter() {
     let currency,valuta ;
     currency = +prompt('Input sum in USD');
@@ -107,6 +126,8 @@ case 3 :
  }
    
 }
+
+
 
 function getAmount() {
     let amount;
