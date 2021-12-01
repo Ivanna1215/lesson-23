@@ -117,13 +117,33 @@ function getAmount() {
       else if (amount>300 && amount<=500) {
         alert (amount - (amount*0.05)); 
       }
-      else if (amount>500 && amount>=700) {
+      else if (amount>500) {
         alert (amount - (amount*0.07)); 
       }
       else {
-          alert (amount - (amount*0.07));
+          alert (amount);
       }
 }
+
+function checkCircle() {
+  let perimetr;
+  let length;
+  length = +prompt ('Input your length circle');
+  perimetr = +prompt('Input your perimetr square');
+  let circle;
+  let square;
+  diameter = length/Math.PI;
+  side = perimetr/4;
+  if (circle<=side) {
+    alert ('Your circle is good');
+  } else {
+    alert ('Your circle is bad');
+  }
+  
+}
+
+
+
 
 function checkEnglish(){
   let question;
@@ -131,29 +151,28 @@ function checkEnglish(){
   alert (question);
   let questionMain = +prompt ('..... I on time? 1-am,2-is, 3-are');
   let result = 0;
-if (questionMain=1) {
+if (questionMain===1) {
 result +=2; 
 } else {
-  result+=0;
+  result=0;
 }
 
    questionMain = +prompt ('....she there? 1-am,2-is,3-are');
-if (questionMain=2) {
+if (questionMain===2) {
   result+=2;
 } else {
-  result+=0;
+  result=0;
 
 }
 
   questionMain = +prompt ('....they late? a-am,b-is,c-are');
-if(questionMain=3) {
+if(questionMain===3) {
   result+=2;
 } else {
-  result+=0;
+  result=0;
 }
 
-alert (result);
-
+alert (`your result  ${result}`);
 }
  
 
