@@ -175,7 +175,58 @@ if(questionMain===3) {
 alert (`your result  ${result}`);
 }
  
+function getDate () {
+  let day;
+  day= +prompt('Input your day');
+  let month;
+  month = +prompt('Input your month');
+  let year;
+  year = +prompt('Input your year');
+  if ((year % 400===0 || year % 4 === 0  && year % 100 > 0 )&& month===2 && day===28) {
+    day+=1;
+    month+=0;
+alert (`Check N1 ${day}.${month}.${year}`); 
 
+  }
+   else if ((year % 400===0 || year % 4 === 0  && year % 100 > 0 )&& month===2 && day===29) {
+    day-=28;
+    month+=1;
+    alert(`Check N2 ${day}.${month}.${year}`);
+  }
+  else if (month===2, day===28) {
+    month+=1;
+    day-=27;
+    alert (`Check N3 ${day}.${month}.${year}`);
+  }
+else if (month===1 && day===31 || month===3 && day===31 || month===5 && day===31 || month===7 && day===31 || month===8 && day===31|| month===10 && day===31 ) {
+month+=1;
+day-=30;
+alert (`Check N4 ${day}.${month}.${year}`);
+}
+else if (month===4 && day===30 || month===6 && day===30 || month===9 && day===30 || month===11 && day===30 ) {
+  month+=1;
+  day-=29;
+  alert (`Check N5 ${day}.${month}.${year}`);
+}
+else if  (month===12 && day===31) {
+  month -=11;
+  day-=30;
+  year+=1;
+  alert (`Check N6 ${day}.${month}.${year}`);
+} 
+else if (month>13 || day>31 || day>31 && month>13) {
+  month === "Eror";
+  day === "Error";
+  year === "Error";
+  alert (' Check N8 This date does not exist')
+}
+ else {
+  day+=1;
+  alert (`Check N7 ${day}.${month}.${year}`);
+}
+
+
+}
 
 
 
