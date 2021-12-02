@@ -128,7 +128,6 @@ case 3 :
 }
 
 
-
 function getAmount() {
     let amount;
     amount = +prompt ('Enter the purchase amount');
@@ -162,8 +161,6 @@ function checkCircle() {
   }
   
 }
-
-
 
 
 function checkEnglish(){
